@@ -27,7 +27,7 @@ The first argument in the *Uploader* class takes the name of the HTML "*name*" a
 
 To filter the file from users you will need to include the *filter_file()* method.
 
-####EXAMPLE
+###EXAMPLE
 ```
 $max_size = (5 * 1024 * 1024);//5MB in bytes
 $accepted_exts = array('jpeg','png','gif','jpg','ico');//array of accepted extensions
@@ -43,7 +43,7 @@ The *filter_file()* Accepts three arguments, first saves the maximum file size(i
 
 To begin file upload, you need to declare the *upload()* method
 
-####EXAMPLE
+###EXAMPLE
 ```
 $upload->upload(true);
 ```
@@ -55,7 +55,7 @@ $upload->upload(true);
 
 
 
-####EXAMPLE
+###EXAMPLE
 ```
 foreach($upload->get_errors() as $error){
 	echo $error."<br>";
@@ -64,15 +64,9 @@ foreach($upload->get_errors() as $error){
 
 *get_uploaded_files()* -- returns the array of all files uploaded files, returns false if no file was uploaded
 
-####EXAMPLE
+###EXAMPLE
 ```
 foreach($upload->get_uploaded_files() as $error){
 	echo $error."<br>";
 }
 ```
-
-##FULL EXAMPLE
-```
-
-
-
