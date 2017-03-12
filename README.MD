@@ -19,7 +19,7 @@ include("php_uploader/uploader.php");
 
 ```
 $upload = new Uploader("myIMG","file-contents/",true);
-``
+```
 
 The first argument in the *Uploader* class takes the name of the HTML "*name*" attribute of your HTML form, the second argument takes the folder of which the uploaded file will be saved in while the third argument saves whether to retain the file name or create a unique name for each file uploaded.
 
