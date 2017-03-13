@@ -67,6 +67,6 @@ foreach($upload->get_errors() as $error){
 ###EXAMPLE
 ```
 foreach($upload->get_uploaded_files() as $file){
-	echo file."<br>";
+	echo $file."<br>";
 }
 ```
