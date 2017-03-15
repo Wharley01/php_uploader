@@ -40,8 +40,7 @@ public function upload($overwrite = false)
 		$this->fileUploadErrors[] = "Error initializing \"filter_file()\" method.";
 		return false;
 	}
-$num_of_files = count($_FILES["$this->name"]["name"]);//get number of uploaded files
-print_r($_FILES["$this->name"]["name"]);
+$num_of_files = count($_FILES["$this->name"]["name"]);//get number of uploaded files 
 //check if no file is being uploaded 
 if($num_of_files < 1){
 	$this->fileUploadErrors[] = "No File was sent";
