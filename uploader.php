@@ -2,8 +2,7 @@
 error_reporting(E_ALL);
 /**************
 * @Author Sulaiman Adewale
-
-
+* this is a test branch
 * @Copyright I don't know
 
 
@@ -76,11 +75,9 @@ if(empty($this->fileUploadErrors)){
 	}
 }
 if(!empty($this->fileUploadErrors)){
-
 return false;
-
 }else{
-	return true;
+return true;
 }
 
 }
